@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "cofabric.memory.project.v1",
+  "name": "mindful-journal",
+  "oneLineDescription": "A journaling + mood tracking web app with AI-generated reflections",
+  "whatItIs": "A journaling + mood tracking web app with AI-generated reflections.",
+  "stack": [
+    {
+      "name": "next",
+      "version": "^14.0.0",
+      "purpose": "React framework"
+    },
+    {
+      "name": "react",
+      "version": "^18.0.0",
+      "purpose": "UI library"
+    },
+    {
+      "name": "react-dom",
+      "version": "^18.0.0",
+      "purpose": "DOM rendering"
+    },
+    {
+      "name": "@supabase/supabase-js",
+      "version": "^2.38.0",
+      "purpose": "Database and auth client"
+    },
+    {
+      "name": "openai",
+      "version": "^4.20.0",
+      "purpose": "AI insights generation"
+    },
+    {
+      "name": "stripe",
+      "version": "^14.8.0",
+      "purpose": "Payment processing"
+    }
+  ],
+  "externalIntegrations": [
+    {
+      "service": "Supabase",
+      "envVars": [
+        "NEXT_PUBLIC_SUPABASE_URL",
+        "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+        "SUPABASE_SERVICE_ROLE_KEY"
+      ],
+      "clientLocation": "src/lib/supabase.ts"
+    },
+    {
+      "service": "OpenAI",
+      "envVars": [
+        "OPENAI_API_KEY"
+      ],
+      "clientLocation": "src/lib/openai.ts"
+    },
+    {
+      "service": "Stripe",
+      "envVars": [
+        "STRIPE_SECRET_KEY",
+        "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
+        "STRIPE_WEBHOOK_SECRET"
+      ],
+      "clientLocation": "src/lib/stripe.ts"
+    }
+  ],
+  "coreUserFlows": [
+    "Create, edit, and delete journal entries",
+    "Log daily mood",
+    "View timeline of entries and moods",
+    "Generate AI insights (paid)",
+    "Search entries and tags"
+  ],
+  "outOfScope": []
+}

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "cofabric.memory.scaffold.v1",
+  "fileTree": [
+    {
+      "path": "package.json",
+      "purpose": "Next.js app with Supabase, OpenAI, Stripe dependencies",
+      "isEmpty": false
+    },
+    {
+      "path": "tsconfig.json",
+      "purpose": "TypeScript config with path mapping (@/*)",
+      "isEmpty": false
+    },
+    {
+      "path": "next.config.js",
+      "purpose": "Next.js config for app directory",
+      "isEmpty": false
+    },
+    {
+      "path": "tailwind.config.js",
+      "purpose": "Tailwind CSS setup with content paths",
+      "isEmpty": false
+    },
+    {
+      "path": "postcss.config.js",
+      "purpose": "PostCSS config for Tailwind",
+      "isEmpty": false
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "purpose": "Root layout with Mindful Journal metadata",
+      "isEmpty": false
+    },
+    {
+      "path": "src/app/page.tsx",
+      "purpose": "Landing page showcasing journaling and mood tracking features",
+      "isEmpty": false
+    },
+    {
+      "path": "src/app/globals.css",
+      "purpose": "Global styles with Tailwind",
+      "isEmpty": false
+    },
+    {
+      "path": "src/lib/supabase.ts",
+      "purpose": "Supabase client initialization",
+      "isEmpty": true
+    },
+    {
+      "path": "src/lib/openai.ts",
+      "purpose": "OpenAI client initialization",
+      "isEmpty": true
+    },
+    {
+      "path": "src/lib/stripe.ts",
+      "purpose": "Stripe client initialization",
+      "isEmpty": true
+    },
+    {
+      "path": ".env.example",
+      "purpose": "Environment variable template",
+      "isEmpty": false
+    },
+    {
+      "path": ".gitignore",
+      "purpose": "Standard Next.js gitignore",
+      "isEmpty": false
+    },
+    {
+      "path": "pr-docs/.gitkeep",
+      "purpose": "Directory placeholder for PR documentation",
+      "isEmpty": false
+    },
+    {
+      "path": "memory/.gitkeep",
+      "purpose": "Directory placeholder for memory files",
+      "isEmpty": false
+    },
+    {
+      "path": "memory/project/.gitkeep",
+      "purpose": "Directory placeholder for project memory",
+      "isEmpty": false
+    },
+    {
+      "path": "memory/task/.gitkeep",
+      "purpose": "Directory placeholder for task memory",
+      "isEmpty": false
+    },
+    {
+      "path": "memory/agent/.gitkeep",
+      "purpose": "Directory placeholder for agent memory",
+      "isEmpty": false
+    },
+    {
+      "path": "memory/context/.gitkeep",
+      "purpose": "Directory placeholder for context memory",
+      "isEmpty": false
+    }
+  ],
+  "libraryExports": [
+    {
+      "file": "src/lib/supabase.ts",
+      "exports": [
+        "supabase"
+      ]
+    },
+    {
+      "file": "src/lib/openai.ts",
+      "exports": [
+        "openai"
+      ]
+    },
+    {
+      "file": "src/lib/stripe.ts",
+      "exports": [
+        "stripe"
+      ]
+    }
+  ],
+  "existingRoutes": [
+    {
+      "type": "page",
+      "path": "/",
+      "file": "src/app/page.tsx",
+      "httpMethods": null,
+      "isEmpty": false
+    }
+  ],
+  "databaseState": {
+    "migrationsExist": false,
+    "tables": []
+  },
+  "intentionallyEmpty": [
+    {
+      "file": "src/lib/supabase.ts",
+      "intendedPurpose": "Supabase client with authentication and database utilities"
+    },
+    {
+      "file": "src/lib/openai.ts",
+      "intendedPurpose": "OpenAI client with AI insights generation functions"
+    },
+    {
+      "file": "src/lib/stripe.ts",
+      "intendedPurpose": "Stripe client with payment processing utilities"
+    }
+  ]
+}
